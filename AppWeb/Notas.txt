@@ -1,0 +1,19 @@
+Dependencias a usar 
+-- numpy
+-- matplotlib
+
+Metodo numpy.linspace
+
+Es un metodo que te devuelve un arreglo de punto A a punto B dividido por un numero N asignado por el programador como argumento
+
+Checar: https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+
+En este link se muestr diversas funciones mateticas que nos puede servir caon ahora solo falta ver como 
+las graficasmos asi bien insano.
+A tomar en consideracion
+-- sin
+-- cos
+-- deg2rad
+-- exp
+Checar: https://numpy.org/doc/stable/reference/routines.math.html
+

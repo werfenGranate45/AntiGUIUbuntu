@@ -1,0 +1,57 @@
+Dependencias a usar 
+-- numpy
+-- matplotlib
+
+Metodo numpy.linspace
+
+Es un metodo que te devuelve un arreglo de punto A a punto B dividido por un numero N asignado por el programador como argumento
+
+Checar: https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+
+En este link se muestr diversas funciones mateticas que nos puede servir caon ahora solo falta ver como 
+las graficasmos asi bien insano.
+A tomar en consideracion
+-- sin
+-- cos
+-- deg2rad
+-- exp
+Checar: https://numpy.org/doc/stable/reference/routines.math.html
+
+Para los post y los get en los formularios
+
+Los formularios de tipo de Post, solo se usan caundo haya un cambio en el sismtem, osea que haya una interaccion
+directa con la base de datos inmediatamente, el servidor es la base de datos ENTENDERLO
+
+Las clases Form por una parte significa que esta clase se van a renderizar en la vista,
+representando los campos para capturar la informacion 
+
+---- Validacion de los Form por parte de dejango caon
+
+Ok para validar aca las cosas bien chingonas debemos, tener en cuenta estos metods
+to_python() --> Que este se va encargar de recolectar toda in informacion para transformarla en un objeto o tipo de to_python
+En caso de que este no sea posible esto, lanzara un error
+
+the_validate() --> esto es otro manejador de que toma el valor cuando se ha coeccionado correctamente,
+no regresa nada y no deberia alterar el valor, aquí se pone toda la logica, que no puedes o no quieres 
+para tener en el validador
+
+clean() --> Este es el metodo que ejuctuta todo lo de arriba y lanza un error en caso de que este no se haya
+validado correctamente, y se ejecuta cuando el metodo is_valid() se llama
+
+Entoces viendolo de esto modo, nosotros podemos crear campos personalizados del form como para que valide,
+de forma especifica un campo que nosotros queramos, no, en este caso, si solo es un float no es necesario crear
+dicha validacion,
+
+Y adentro de esas clases del campo se incluyen los to_python() y el the_validate() metodos
+
+En conclusion se nos da la libertad de validar nuestros campos de forma personalizada, creando nuestros propios campos
+y alli sobrescribiendo los metodos de to_python() the_valida()
+
+Tambien se nos permite crear nuestros propias secuencias de validacion e incluirlas en los campos de los forms o models
+usando el parametro validators = [Validaciones_propias o importadas de Django]
+
+E igual adentro del form, podemos sobrescribir el metodo de clean_<nombreCampoDelForm> -> en caso de que se quiera 
+hacer una validacion especifica con ese campo
+
+https://docs.djangoproject.com/en/5.2/ref/validators/ --> Lista de clases para validacion
+https://docs.djangoproject.com/en/5.2/ref/forms/validation/#validating-fields-with-clean //Documentacion de mis conclusiones

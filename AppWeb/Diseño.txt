@@ -1,0 +1,61 @@
+Meta: Desarrollar un modulo de Python que funcione como una calculadora grafica, donde el usuario le pasa
+argumento a 3 funciones matematicas
+- sin
+- cos
+- exp
+
+La vista del usuario debe recibir como luce graficamente la funcion.
+
+Consideraciones: 
+- Debemos convertir los datos sexadecimal a Radianes, obligaremos al usuario a capturar los datos sexadecimal
+- Usaremos la bibliotecas de NumPy para realizar los calculos matematicos
+
+Clases bien orientado a objetos
+-- Habra una funccion que solo calcule la funcion matematicas
+
+Consideraciones 12/06/2025
+
+Viendo las notas quize usar una arquitectura M-V-C asi que ya tengo las carpetas 
+las clases por parte del controlador ya esta. falta mejorar solo la grafica por
+parte del matplolib y tambien falta verificar o que meteremos en el modelo
+
+Siento que en el modelo meteremos algo mas de configuracion para las graficas algunos parametros o 
+y/o el input del usuario 
+
+12/06/2025
+Hay que crear las vistas, ya luego vemos como la integremos
+
+5/07/2025
+Ya he creado una calculadora con GUI, y la conclusion a la que he llegado es que,
+mejor me voy hacer una aplicacion web, usando el FrameWork de Django, ya que sera mas
+facil la creacion de la interfaz con el uso de HTML
+
+Incluso no creo que sea necesario, si me lo aviento desde 0 el todo el HTML
+
+Usare el Django para un desarrollo mas rápido, pero ahora, el objetivo
+es usar los metodos matematicos usados en el machine learning o en 
+data analysy, asi que  al verga
+
+La calculadora se va a realizar pero ahora los vamos a implementar con el trabajo de samudio 
+que le dio a los pibes Python siendo que esto significa la razon de este enviaroment
+
+
+En Django se usa un patron de  Modelo - Vista - Plantilla
+
+Que practicamente lo que cambie es que la vista es aquella que va contener la logica
+Para obtener la informacion del usuario y luego desplegar la informacion a base de una Plantilla
+
+Donde la plantilla representa practicamente la vista en blade 
+La vista representa el controller 
+El modelo sigue siendo la interaccion con la base de datos
+
+En este caso la aplicacion no tendra base de datos por ahora, ya que esta va ser concentrada
+en el despliegue de informacion, como si se tratara de un GeoGebra sin database [Por Ahora]
+
+Entoces cofirmado por la documentacion, las vistas solo piden 2 cosas de estas
+All Django wants is that HttpResponse. Or an exception.
+
+Lo demas depende de nostros y todo lo que le queramos meter, entoces vamos a hcerlo,
+usando ademas todas las bibliotecas que queramos
+
+https://docs.djangoproject.com/en/5.2/intro/tutorial03/ Parte del tutorial de las vistas y su manejo
