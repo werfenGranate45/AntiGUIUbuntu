@@ -1,0 +1,11 @@
+Comandos necesarios
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential
+
+|--------------Este comando en la carpeta / para ponerla------|
+sudo touch /urs/include/strops.h
+make all      # Ejecuta el target 'all' (lo mismo que solo 'make')
+make clean    # Limpia archivos compilados temporales
+make install  # Instala el programa en el sistema
+make debug    # Compila en modo depuración (si existe ese target)
